@@ -10,7 +10,6 @@ body{
 /* LINE GRAPH */
 .line {
     fill: none;
-    stroke: steelblue;
     stroke-width: 2px;
 }
 
@@ -34,8 +33,25 @@ body{
     display: none;
 }
 
-
-
+/* HAGUE SCHOOL MAIN LAYOUT (CONTAINERS) */
+#wordsContainer{
+    margin-top: 0px;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    background-color: pink;
+}
+.tablecell {
+    display: table-cell;
+    height: 200px;
+    text-align: center;
+}
+#progressiveContainer{
+    background-color: red;
+}
+#radicalContainer{
+    background-color: orange;
+}
 
 
 /* ALL */

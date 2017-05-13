@@ -5,7 +5,7 @@ var $progress;
 
 var API = '66aa1037e1974e1eb4bfa27aac268146';
 var YEAR = 2015;
-var OCCURANCES = 1131;
+var OCCURANCES = 1034;
 
 // var INTERESTING_DATES = [1912, 1913, 1914, 1918, 1928, 1929, 1948, 1960, 1980, 2016]; // PROGRESSIVE
 // var CORRELATED_FREQ = [2240, 1330, 1162, 332, 1079, 925, 1391, 548, 882, 1221];
@@ -122,10 +122,10 @@ function processArticleData() {
 
 function fetchForYear(year, page, term) {
 	// YYYYMMDD
-	var startYearStr = year + "0101"; // jan 1
+	//var startYearStr = year + "0101"; // jan 1
     //var startYearStr = year + "0501"; // jan 1
     //var startYearStr = year + "0901"; // jan 1
-    //var startYearStr = year + "0531"; // jan 1
+    var startYearStr = year + "0531"; // jan 1
     //var endYearStr = year + "0801"; // dec 31
 	//var endYearStr = year + "0501"; // may 1
     //var endYearStr = year + "0531"; // may 31
