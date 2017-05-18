@@ -7,10 +7,10 @@
     	<meta name="description" content="">
     	<meta name="viewport" content="width=device-width">
     	<link href="https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600" rel="stylesheet">
-        <link rel="stylesheet" href="styles.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
     	<script src="https://d3js.org/d3.v4.js"></script>
-    	<script src="jquery-3.2.0.min.js"></script>
-    	<script src="nytimes.js"></script>
+    	<script src="js/jquery-3.2.0.min.js"></script>
+    	<script src="js/basic.js"></script>
     	</style>
     </head>
 
@@ -21,20 +21,17 @@
         	<button id="searchButton">Search</button> <span id="progress"></span>
     	</p> -->
     	
-        <header>
-            <h1 class="pageTitle">Hague School</h1>
-            <!-- <h5 class="pageDescription">Each painting on display from the Hague School is broken down by its pixels and displayed as a string of colors sorted by hue.</h2> -->
-        </header>
+        <div id="summary">Some words are concrete. There definition hasn’t changed much since the beginning of time. The definition of an apple in the 1800’s still remains the same today, except with a wider variety of options. Yet, some words are protean. Their connotation can differ greatly between people, times, places, etc. How do you define these words? Protean words change as the culture around them changes. A radical in 1865 isn’t what a modern American would define as a radical. Does a modern conservative know that some of their economic policies originated with the Progressive Party in the 1900’s? Conflict and disagreement aren’t new to American society, but neither are many of the words at the center of these arguments. The goal of this project is to show through data driven visualizations and historical qualitative data from The New York Times how two of the most highly contested words in modern society have evolved throughout time.</div>
 
         <div id="wordsContainer">
             <!-- LEFT: PROGRESSIVE -->
-            <div class="tablecell" id="progressiveContainer">
-                progressive
+            <div id="progressivetext" class="tablecell" id="progressiveContainer">
+                <a class="links" id="linkProgressive" href="progressive.html">progressive</a>
             </div>
 
             <!-- RIGHT: RADICAL -->
-            <div class="tablecell" id="radicalContainer">
-                radical
+            <div id="radicaltext" class="tablecell" id="radicalContainer">
+                <a class="links" id="linkRadical" href="radical.html">radical</a>
             </div>
         </div>
 

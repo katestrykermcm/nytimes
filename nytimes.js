@@ -2,10 +2,10 @@ var freq_progressive = null;
 var freq_radical = null;
 
 // grab frequency data stored in files (output from frequency.js)
-d3.json("data/progressive/progressive.json", function (error, json) {
+d3.json("data/progressive/frequency_progressive.json", function (error, json) {
 	freq_progressive = json;
 });
-d3.json("data/radical/radical.json", function (error, json) {
+d3.json("data/radical/frequency_radical.json", function (error, json) {
     freq_radical = json;
 });
 
@@ -34,7 +34,9 @@ function drawGraph(data1, data2) {
 
     // define the line
     var line = d3.line()
-        .x(function(d) { return x(d.year); })
+        .x(function(d) { 
+            console.log(d);
+            return x(d.year); })
         .y(function(d) { return y(d.results); });
 
     // append the svg obgect to the body of the page
